@@ -1,0 +1,18 @@
+.idea
+node_modules
+.DS_Store
+npm-debug.log
+.env
+build/
+testing.log
+logfile
+flush
+logs
+<<<<<<< HEAD
+ecosystem.config.js
+.vs
+=======
+files/
+package-lock.json
+ecosystem.config.js
+>>>>>>> 6102becd764ef9eb38be0ce67eaa6ed9048a6b7b

@@ -1,0 +1,12 @@
+{
+  "ignore": [
+    "node_modules",
+    "combined.log"
+  ],
+  "watch": ["src"],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js,json",
+  "exec": "babel-node src/startServer.js"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "api-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm src/startServer.js",
+    "dev": "nodemon",
+    "dev:migration": "cross-env NODE_ENV=development sequelize db:migrate",
+    "dev:undo:migration": "cross-env NODE_ENV=development sequelize db:migrate:undo:all",
+    "prod:migration": "cross-env NODE_ENV=production sequelize db:migrate",
+    "prod:undo:migration": "cross-env NODE_ENV=production sequelize db:migrate:undo:all"
+  },
+  "repository": "https://Hector101@bitbucket.org/starkng/api-base.git",
+  "keywords": [],
+  "author": "hector101 <hector1014really32@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hector101/coqonect/issues"
+  },
+  "homepage": "https://github.com/Hector101/coqonect#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@sendgrid/mail": "^6.4.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^2.4.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "cross-env": "^5.2.0",
+    "crypto-random-string": "^3.2.0",
+    "dotenv": "^6.1.0",
+    "esm": "^3.2.25",
+    "express": "^4.16.4",
+    "express-useragent": "^1.0.12",
+    "express-validator": "^5.3.0",
+    "helmet": "^3.15.1",
+    "json-2-csv": "^3.14.4",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mysql2": "^1.6.5",
+    "node-fetch": "^2.6.7",
+    "nodemailer": "^6.7.2",
+    "q": "^1.5.1",
+    "randomstring": "^1.1.5",
+    "sequelize": "^4.44.4",
+    "sequelize-cli": "^5.5.1",
+    "unirest": "^0.6.0",
+    "winston": "^3.3.3",
+    "xml2js": "^0.4.19",
+    "yarn": "^1.22.11",
+    "ziptree": "^0.1.2"
+  },
+  "private": true,
+  "npmClient": "yarn",
+  "bin": {
+    "sequelize": "node_modules/.bin/sequelize"
+  }
+}
