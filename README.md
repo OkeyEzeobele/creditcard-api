@@ -23,7 +23,8 @@ The following should be installed in your machine
 ## Debugging
 - Ensure to include `logger` from the heloers directory in all catch block for ease of debugging in any environment
 - The `logger` logs to the console on **development** environment, and writes to a `logs/**.log` file on **production** environment
-**Usage**
+
+##### Usage
 ```
     logger.info(string data);
 
