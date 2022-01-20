@@ -11,14 +11,14 @@
     "prod:migration": "cross-env NODE_ENV=production sequelize db:migrate",
     "prod:undo:migration": "cross-env NODE_ENV=production sequelize db:migrate:undo:all"
   },
-  "repository": "https://Hector101@bitbucket.org/starkng/api-base.git",
+  "repository": "https://github.com/OkeyEzeobele/creditcard-api.git",
   "keywords": [],
-  "author": "hector101 <hector1014really32@gmail.com>",
+  "author": "Okey <chimaokeyjay@gmail@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Hector101/coqonect/issues"
+    "url": "https://github.com/OkeyEzeobele/creditcard-api/issues"
   },
-  "homepage": "https://github.com/Hector101/coqonect#readme",
+  "homepage": "https://github.com/OkeyEzeobele/creditcard-api#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.4.5",
@@ -45,6 +45,7 @@
     "express-useragent": "^1.0.12",
     "express-validator": "^6.14.0",
     "helmet": "^3.15.1",
+    "hosted-git-info": "^4.1.0",
     "json-2-csv": "^3.14.4",
     "jsonwebtoken": "^8.3.0",
     "lodash": "^4.17.11",
